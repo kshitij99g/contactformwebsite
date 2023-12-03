@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    
+
+<head>
+    <meta name="viewport" content="width=device-width",intial-scale=1">
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;}
+    *{box-sizing: border-box;}
+
+input[type=text],select,textarea{
+    width:100%;
+
+    padding: 12px;
+
+    border:1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: blue;
+    color:white;
+    padding:12px 20px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+
+    background-color: blue;
+}
+
+.container{
+    border-radius: 5px;
+    background-color: yellow;
+    padding:20px;
+
+}
+    </style>
+</head>
+<body>
+<h3>Contact form</h3>
+
+
+<div class="container">
+    <form action="/action_page.php">
+        <br>
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+<br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<br>
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="india">india</option>
+            <option value="norway">norway</option>
+            <option value="Germany">Germany</option>
+        </select>
+<br>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something..." style="height: 200px;">
+        
+        </textarea>
+<br>
+        <input type="Submit" value="Submit">
+    </form>
+</div>
+<P>By Kshitij Umesh Pimple</P>
+</body>
+</html>
